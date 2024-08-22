@@ -1,0 +1,207 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aiden Scowen | Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <favicon href="Images/logo.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">CV / Contact</a></li>
+                        <img src="Images/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" class="mobile-btn" onclick="closemenu()">
+                    </ul>
+                    <img src="Images/menu_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png" class="mobile-btn" onclick="openmenu()">
+                </nav>
+                <div class="header-text">
+                    <p>Professional Programmer</p>
+                    <h1>Hi, I'm <span>[ Aiden ]</span><br> hailing from the United Kingdom!</h1>
+                </div>
+            </div>
+        </div>
+        <!-- ------------ about me ---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/example.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I have designed, planned, and developed interactive games using Roblox Studio and Godot, 
+                            leveraging my programming skills in Luau and GDScript. My experience includes 
+                            creating user interfaces, logos, and vectors with Affinity Designer/Photo, as well as 
+                            building, fixing, and maintaining computers to provide IT support to family and friends. 
+                            Additionally, I have tutored beginners in Luau for Roblox Studio, using videos which involved 
+                            filming, editing, and publishing tutorials with VEGAS Movie Studio 2013 and 2016.
+                        </p>
+
+                        <div class="tab-titles">
+                            <h2 class="tab-links active-link" onclick="opentab('Skills')">Skills</h2>
+                            <h2 class="tab-links" onclick="opentab('Experience')">Experience</h2>
+                            <h2 class="tab-links" onclick="opentab('Education')">Education</h2>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Programming</span><br>Professional & Proficient in LuaU, GDScript, HTML, CSS</li>
+                                <li><span>Designing</span><br>Designing professional Logos, Vectors, UI/UIX</li>
+                                <li><span>IT Repair</span><br>Expert in rebuilding, diagnosing and repairing Computers using Software & Hardware.</li>
+                                See Projects Page for details.
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Game Developer | Freelancer | Current</span><br> 
+                                    •	Developed games for IOS, Android & PC platforms using Roblox Studio in Luau.<br>
+                                    •	Collaborated with team members to enhance game mechanics.<br>
+                                    •	Implemented user interfaces and game features based on design of specifications.<br>
+                                    •	Integrated third-party APIs for analytics & in-app purchases.<br>
+                                    •	Assisted in testing, debug and ensuring functionality of core mechanics, completed code reviews, and managed documentation of code.<br>
+                                </li>
+                                <li><span>Web Developer | Freelancer | Current</span><br> 
+                                    •	Developed websites for clients using HTML, CSS & JavaScript.<br>
+                                    •	Designed and developed responsive websites for mobile and desktop.<br>
+                                    •	Managed and maintained websites for clients.<br>
+                                </li>
+                                See Projects Page for details.
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Computer Science BTEC Diploma 2024 | College Of West Anglia</span><br>
+                                    •	Develop & plan an interactive and fun game using Godot in GDScript and document it the development process.<br>
+                                    •	Developing Websites using HTML, CSS, and interactive frameworks such as JavaScript/React<br>
+                                    •	Understanding Object-Oriented Programming in C#, Python, JavaScript, with similarities in other programming languages<br>
+                                    •	Understanding Computer Networking, including network types and models.<br>
+                                    •	Managing & Supporting computer systems, utilizing tools such as antivirus, firewalls, VNC, Windows Troubleshooter, System Mechanic, and monitoring software
+                                </li>
+                                <li><span>INFORMATION & CREATIVE TECHNOLOGY 2022 | College Of West Anglia</span><br>
+                                    •	IT Systems Security & Encryption: Understanding how encryption secures data, and the pros and cons of encryption.<br>
+                                    •	Business Applications for social media: Understanding company choices, privacy concerns, and running a successful online business.<br>
+                                    •	The Impact of Computing: Analyzing the pros and cons of technology, importance of recycling, environmental effects, and benefits to society<br>
+                                    •	Digital Graphics & Animation: Advanced editing skills and targeting specific audiences
+                                </li>
+                                <li><span>English</span><br>Functional Skills Level 2</li>
+                                <li><span>Maths</span><br>Functional Skills Level 1</li>
+                            </ul>
+                            See CV for extra details.
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------ Portfolio ---------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/example2.png">
+                        <div class="layer">
+                            <h3>Mobile Phone Website</h3>
+                            <p>This was designed to understand flex boxes and grids.</p>
+                            <a href="#"><img src="Images/open_in_new_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/example2.png">
+                        <div class="layer">
+                            <h3>Mobile Phone Website</h3>
+                            <p>This was designed to understand flex boxes and grids.</p>
+                            <a href="#"><img src="Images/open_in_new_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/example2.png">
+                        <div class="layer">
+                            <h3>Mobile Phone Website</h3>
+                            <p>This was designed to understand flex boxes and grids.</p>
+                            <a href="#"><img src="Images/open_in_new_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- ------------ Contact ---------- -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="Images/forward_to_inbox_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png" class="contact-info-icon"> scowenaiden@gmail.com</p>
+                    <p><img src="Images/call_24dp_00C1FF_FILL0_wght400_GRAD0_opsz24.png" class="contact-info-icon">07737707847</p>
+                    <a href="#" class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Aiden Scowen. All rights reserved.</p>
+        </div>
+
+        <!-- ------------ Scripts ---------- -->
+         <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+
+            function opentab(tabname){
+                for(var i = 0; i < tabcontents.length; i++){
+                    tabcontents[i].style.display = 'none';
+                }
+                for(var i = 0; i < tablinks.length; i++){
+                    tablinks[i].className = tablinks[i].className.replace(' active-link', '');
+                }
+                document.getElementById(tabname).style.display = 'block';
+                for(var i = 0; i < tablinks.length; i++){
+                    if(tablinks[i].innerHTML === tabname){
+                        tablinks[i].className += ' active-link';
+                    }
+                }
+            }
+         </script>
+
+         <script>
+            var sidemenu = document.getElementById('sidemenu');
+
+            function openmenu(){
+                sidemenu.style.right = '0';
+            }
+
+            function closemenu(){
+                sidemenu.style.right = '-200px';
+            }
+         </script>
+
+         <script>
+            /* ------ Download CV, CV located in Images, named AidenScowensCV ------ */
+
+            var btn = document.getElementsByClassName('btn2')[0];
+
+            btn.addEventListener('click', function(){
+                var cv = document.createElement('a');
+                cv.href = 'AidenScowensCV.docx';
+                cv.download = 'AidenScowensCV.docx';
+                cv.click();
+            });
+
+         </script>
+    </body>
+</html>
